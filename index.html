@@ -9,54 +9,71 @@
 </head>
 
 <body>
-    <header>
-        <h2>Recipes for College Students</h2>
+    <div class = "container">
+    <header class="site-header">
+        <div class="header-inner">
+
+        <h2 class="brand">Recipes for College Students <span class="dot">.</span></h2>
         <nav>
-            <ul>
-                <li><a href="#main-content">Why was this website made?</a></li>
-                <li><a href="#features">"I'm still not sure"</a></li>
-                <li><a href="#recipes">Jump to recipes</a></li>
-                <li><a href="#copyright">Copyright</a></li>
-            </ul>
+            
+                <a href="#features"><span class="btn btn-outline">Features</span></a>
+                <a href="#recipes"><span class="btn btn-outline">Recipes</span></a>                
+                <a href="#copyright"><span class="btn btn-outline">Copyright</span></a>
+            
         </nav>
+
+        </div>
     </header>
 
     <main id="main-content">
         <!-- Hero -->
-        <section>
+        <section class="hero">
+            <div class="hero-content">
             <h1>Quick Recipes</h1>
-            <p>This website has recipes for some easy-to-make dishes that are perfect for college students.</p>
-                
-                <img src="images/student_chef.jpeg" alt="A college student preparing to cook" width="600">
-                <p>Don't visit your nearest McD, COOK!</p>
+            <p class="hero-subhead">This website has links to recipes for some easy-to-make dishes that are perfect for college students.</p>
             
-            <a href="#recipes">Get cookin! </a>
+                <p class="color"><b><u>Don't visit your nearest McD, COOK!</u></b></p>
+            
+            <a href="#recipes" class="btn btn-dark">Get cookin! </a>
+            <a href="#recipes" class="btn btn-outline">Get cookin! </a>
+            </div>
         </section>
 
-        <!-- Features -->
-        <section id="features">
-            <h2>Why these recipes?</h2>
+        <br>
 
+        <!-- Features -->
+         <h2 id="features" class="center">Features</h2>
+        <section class="features-grid">
+
+            
+
+            <div class="feature">
             <img src="images/timer.svg" alt="A timer icon" width = "50">
             <h3>Quick Recipes</h3>
             <p>All recipes on this website are very quick to make.</p>
+            </div>
 
             <br>
             
+            <div class="feature">
             <img src="images/eggs.svg" alt="An icon with two eggs" width="50">
             <h3>Simple Ingredients</h3>
             <p>Everything you need will be easy to obtain and simple to handle.</p>
+            </div>
 
             <br>
 
+            <div class="feature">
             <img src="images/yummy.svg" alt="Icon with 'yummy' emoji" width="50">
             <h3>Absolutely Delicious</h3>
             <p>Guaranteed to taste amazing.</p>
+            </div>
+
         </section>
         
         <!-- Featured content -->
-        <section id="featured">
-            <h2>I'm hungryyyyy</h2>
+        <section id="featured" class="featured">
+            <h2>ARE YOU HUNGRY?</h2>
             <p>Being a student is tough. You do not always have hours to cook food for yourself. 
                 <br>So, this website features recipes specifically selected for college students. 
                 <br>They are easy and quick to make, and you will find all necessary ingredients very close.</p>
@@ -64,48 +81,56 @@
         </section>
 
         <!-- Secondary content -->
-        <section id="recipes">
-            <h2>Where are the recipes?</h2>
-            <p>Here you go!</p>
+        <section id="recipes" class="secondary-grid">
 
-            <h3>Egg Fried Rice</h3>
-            <img src="images/Egg_Fried_Rice.jpeg" alt="A bowl of egg fried rice" width="300">
+            <div class="card">
+            <h2 class="center">Egg Fried Rice</h2>
+            <div class="card-image img-a"></div>
+                
             <p>A quick 20-minute recipe that only needs Rice, Eggs and veggies. 
                 Tastes amazing even with just a few ingredients.</p>
 
-            <p>
-                <a href="https://www.thekitchn.com/fried-rice-recipe-23652991">
-                View the Egg Fried Rice recipe on The Kitchn
+            <p class="center">
+                <a href="https://www.thekitchn.com/fried-rice-recipe-23652991" class="btn btn-dark">
+                View recipe
                 </a>
             </p>
+            </div>
         
-            <h3>Fried Egg and Sweet Potato Hash</h3>
-            <img src="images/Sweet_Potato_Hash.jpg" alt="Sweet potato hash topped with a fried egg" width="300">
+            <div class="card">
+            <h2 class="center">Fried Egg and Sweet Potato Hash</h2>
+            <div class="card-image img-b"></div>
             <p> A quick 30-minute recipe that only needs a sweet potato, eggs, feta cheese block, and garlic. 
                 There is a good chance this becomes your go-to breakfast.</p>
-            <p>
-                <a href="https://jow.com/recipes/fried-egg-and-sweet-potato-hash-8lrz9qnb8sv8jvp60o66">
-                View the Fried Egg and Sweet Potato Hash recipe on Jow
+            <p class="center">
+                <a href="https://jow.com/recipes/fried-egg-and-sweet-potato-hash-8lrz9qnb8sv8jvp60o66" class="btn btn-dark">
+                View recipe
                 </a>
             </p>
+            </div>
         </section>
 
         <!--Call-to-action section-->
-        <section id="cta">
+        <section id="cta" class="cta-inner">
             <h2>Heard Enough?</h2>
-            <p><a href="#recipes">Choose a recipe and start cooking!</a></p>
+            <p class="btn btn-dark"><a href="#recipes">Choose a recipe and start cooking!</a></p>
         </section>
     </main>
 
-    <footer id="copyright">
+    <footer id="copyright" class="site-footer">
+
+        <div class="footer-inner">
         <p>&copy; 2026 Recipes for College Students</p>
 
-        <ul>
-            <li><a href="#main-content">Back to top</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#recipes">Recipes</a></li>
-        </ul>
+        
+            <a href="#main-content"> <span class="btn btn-outline">Back to top</span></a>
+            <a href="#features"><span class="btn btn-outline">Features</span></a>
+            <a href="#recipes"><span class="btn btn-outline">Recipes</span></a>
+        
+
+        </div>
 
     </footer>
+    </div>
     
 </body>
